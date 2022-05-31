@@ -1,0 +1,11 @@
+title: The IDOR Wall of Sham
+description: >-
+  A list of companies that treat insecure direct object references as intended functionality, not a security requirement
+url: https://hideourdata.github.io/
+
+theme: beautiful-jekyll-theme
+kramdown:
+  parse_block_html: true
+
+collections:
+  - companies
