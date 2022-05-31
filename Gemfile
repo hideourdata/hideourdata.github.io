@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.9"
+gem "jekyll", "~> 4.2.2"
 gem "beautiful-jekyll-theme", "5.0.0"
 gem "github-pages", group: :jekyll_plugins
 
