@@ -95,17 +95,13 @@ permalink: /
 </summary> 
 An insecure direct object reference (IDOR) can be classified as an access control vulnerability, which may appear when an application exposes references to resources, allowing these resources to be accessed directly through user-supplied input, without requiring authorization.
 
-<br>
-
 <summary>
-<h2>How can a threat actor exploit this vulnerability?</h2>
+<h2>How can a hacker exploit this vulnerability?</h2>
 </summary>
-A threat actor may exploit this vulnerability using a variety of techniques:
+A hacker may exploit this vulnerability using a variety of techniques:
 
 - Performing a brute force attack against vulnerable application functionality to gain unauthorized access to resources via a direct request to the resource.
 - Accessing the server logs of a web application or browsing history of an end user to obtain access to URLs that directly reference and link to sensitive data stored on a web application server.
-
-<br>
 
 <summary>
 <h2>Why should I care?</h2>
@@ -117,8 +113,6 @@ The companies listed in this article allow for uploaded user data, in the form o
 The listed companies have been contacted and communicated with. Their refusal to the patch the functionality of their applications is what prompted the release of this article.
 
 Should you choose to provide your data to the entities listed below, be warned: Your uploaded data resides on a server, unprotected from any user that can directly reference the resource.
-
-<br>
 
 <summary>
 <h2>Historical Breaches involving insecure direct object references</h2>
