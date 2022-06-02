@@ -16,7 +16,7 @@ permalink: /
         color:  rgba(36,83,97,1)
       }
 
-      #contentPara, #contentList {margin-left: 10%; margin-right:10%;}
+      #contentPara, #contentList {margin-left: 5%; margin-right:5%;}
       #contentHeader {margin-left: 5%; margin-right:5%;font-size:22px}
       #subHeader {font-style:italic;font-size:15px;}
       #contentSubHeader {margin-left: 15%; margin-right:15%;font-size:18px}
@@ -81,70 +81,98 @@ permalink: /
         font-weight: bold;
         color: #245361;
       }
+
+      /* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 }
   </style>
 
 <header>
 
   <h1>The IDOR Wall of Shame</h1>
-  <p id="subHeader">A list of companies that treat insecure direct object references as intended functionality, not a security requirement</p>
+  <p id="subHeader">A list of organizations that treat insecure direct object references as intended functionality, not a security vulnerability</p>
 </header>
 
 <summary>
-<h2>What is an insecure direct object reference?</h2>
+<h2 id="contentHeader">What is an insecure direct object reference?</h2>
 </summary> 
-An insecure direct object reference (IDOR) can be classified as an access control vulnerability, which may appear when an application exposes references to resources, allowing these resources to be accessed directly through user-supplied input, without requiring authorization.
+<p id="contentPara">An insecure direct object reference (IDOR) can be classified as an access control vulnerability, which may appear when an application exposes references to resources, allowing these resources to be accessed directly through user-supplied input, without requiring authorization.</p>
 
 <summary>
-<h2>How can a hacker exploit this vulnerability?</h2>
+<h2 id="contentHeader">How can a hacker exploit this vulnerability?</h2>
 </summary>
-A hacker may exploit this vulnerability using a variety of techniques:
+<p id="contentPara">A hacker may exploit this vulnerability using a variety of techniques:</p>
 
-- Performing a brute force attack against vulnerable application functionality to gain unauthorized access to resources via a direct request to the resource.
-- Accessing the server logs of a web application or browsing history of an end user to obtain access to URLs that directly reference and link to sensitive data stored on a web application server.
+<ul id="contentList">
+<li>Performing a brute force attack against vulnerable application functionality to guess valid references and gain unauthorized access to resources via a direct request to the resource.</li>
+<li>Accessing logs from web servers or intermediaries (e.g., web proxies, gateways, CDNs, etc.), or the browsing history of an end user, to obtain URLs that directly reference and link to sensitive data stored by the application.</li></ul>
 
 <summary>
-<h2>Why should I care?</h2>
+<h2 id="contentHeader">Why should I care?</h2>
 </summary>
-When a company is provided with personal data, they are expected to protect this data and withhold it from unauthorized parties.
+<p id="contentPara">When a company is provided with personal data, they are expected to protect this data from unauthorized access.</p>
 
-The companies listed in this article allow for uploaded user data, in the form of photos and documents, to be accessible to any unauthorized party that can directly reference the data. Thus, they are not taking the necessary steps to protect their user’s personal data.
+<p id="contentPara">The companies listed on this site allow for users to upload files, in the form of photos and documents, to be accessible by any unauthorized party that can directly reference the data. They are not taking the necessary steps to protect their users’ personal data from unauthorized access.</p>
 
-The listed companies have been contacted and communicated with. Their refusal to the patch the functionality of their applications is what prompted the release of this article.
+<p id="contentPara">The listed companies have been contacted and communicated with. They are added to this list if they refuse or fail to address the vulnerability in their applications in a timely manner.</p>
 
-Should you choose to provide your data to the entities listed below, be warned: Your uploaded data resides on a server, unprotected from any user that can directly reference the resource.
+<p id="contentPara">Should you choose to provide your data to the entities listed below, be warned: Your uploaded data resides on a server, unprotected from unauthorized access by anyone that can directly reference the resource.</p>
 
 <summary>
-<h2>Historical Breaches involving insecure direct object references</h2>
+<h2 id="contentHeader">Historical Breaches involving insecure direct object references</h2>
 </summary>
-IDORs are historically problematic, as they can lead to data leaks and even account takeovers. Due to the prevalence of IDORS within web applications, it has led to some major data breaches over the past few years.
+<p id="contentPara">IDORs are historically problematic, as they can lead to data leaks and even account takeovers. Due to the prevalence of IDORs within web applications, it has led to some major data breaches over the past few years.</p>
 
 <summary>
-<h3>The First American Financial Data Leak</h3>
+<h3 id="contentHeader">The First American Financial Data Leak</h3>
 </summary>
 <summary>
-In 2019, a security researcher discovered that the First American Financial website had an IDOR vulnerability which left hundreds of millions of sensitive files exposed. These files contained personal identifiable information such as social security numbers, drivers’ licenses, and bank account numbers, which could all be viewed without any authentication. Not only could a valid URL be viewed by anyone, modifying a single digit within this URL would link to a different document.
-</summary>
-
-<summary>
-<h3>United States Department of Defense website</h3>
+<p id="contentPara">In 2019, a security researcher discovered that the First American Financial website had an IDOR vulnerability which left hundreds of millions of sensitive files exposed. These files contained personal identifiable information such as social security numbers, drivers’ licenses, and bank account numbers, which could all be viewed without any authentication. Not only could a valid URL be viewed by anyone, modifying a single digit within this URL would link to a different document.</p>
 </summary>
 
 <summary>
-In 2020, a security firm discovered an IDOR vulnerability on the United States Department of Defence website. This instance of IDOR allowed for an unauthenticated account takeover, as the user ID and username parameters could be modified in a request to change the account password of any user.
+<h3 id="contentHeader">United States Department of Defense website</h3>
+</summary>
+
+<summary>
+<p id="contentPara">In 2020, a security firm discovered an IDOR vulnerability on the United States Department of Defence website. This instance of IDOR allowed for an unauthenticated account takeover, as the user ID and username parameters could be modified in a request to change the account password of any user.</p>
 </summary>
 
 <br>
 
-## The Wall
+<h2 id="contentHeader">The Wall</h2>
 
 <table class="content-table">
   <thead>
     <tr>
       <th>Vendor</th>
       <th>Disclosure Date</th>
-      <th title="Still Accessible After Deletion">SAAD</th>
-      <th title="Still Accessible After Account Deletion">SAAAD</th>
+      <th>Still Accessible After Deletion</th>
+      <th>Still Accessible After Account Deletion</th>
       <th>Last Checked</th>
       <th>Sample URL</th>
       <th>Data Type</th>
