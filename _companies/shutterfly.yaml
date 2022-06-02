@@ -1,0 +1,9 @@
+---
+name: Shutterfly
+company_url: https://www.shutterfly.com/
+disclosure_date: 2022-05-18
+saad: Yes
+saaad: N/A
+last_checked: 2022-05-25
+sample_url: https://uniim1.shutterfly.com/render/{Account Hash}{Image Hash}?res=x-small
+data_type: JPEG, PNG, Image/heic, BMP

@@ -1,11 +1,29 @@
-title: The IDOR Wall of Sham
+title: The IDOR Wall of Shame
 description: >-
   A list of companies that treat insecure direct object references as intended functionality, not a security requirement
-url: https://hideourdata.github.io/
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 
-theme: beautiful-jekyll-theme
-kramdown:
-  parse_block_html: true
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
 
 collections:
   - companies
+
+kramdown:
+  parse_block_html: true
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: false
+      comments: false
+      share: true
+      related: false
