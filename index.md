@@ -143,12 +143,12 @@ permalink: /
 <p id="contentPara">Should you choose to provide your data to the entities listed below, be warned: Your uploaded data resides on a server, unprotected from unauthorized access by anyone that can directly reference the resource.</p>
 
 <summary>
-<h2 id="contentHeader">Historical Breaches involving insecure direct object references</h2>
+<h2 id="contentHeader">Historical breaches involving insecure direct object references</h2>
 </summary>
 <p id="contentPara">IDORs are historically problematic, as they can lead to data leaks and even account takeovers. Due to the prevalence of IDORs within web applications, it has led to some major data breaches over the past few years.</p>
 
 <summary>
-<h3 id="contentHeader">The First American Financial Data Leak</h3>
+<h3 id="contentHeader">The First American financial data leak</h3>
 </summary>
 <summary>
 <p id="contentPara">In 2019, a security researcher discovered that the First American Financial website had an IDOR vulnerability which left hundreds of millions of sensitive files exposed. These files contained personal identifiable information such as social security numbers, drivers’ licenses, and bank account numbers, which could all be viewed without any authentication. Not only could a valid URL be viewed by anyone, modifying a single digit within this URL would link to a different document.</p>
