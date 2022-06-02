@@ -116,7 +116,7 @@ The companies listed in this article allow for uploaded user data, in the form o
 
 The listed companies have been contacted and communicated with. Their refusal to the patch the functionality of their applications is what prompted the release of this article.
 
-Should you choose to provide your data to the entities listed below, be warned: Your uploaded data resides on a server, unprotected from any user that directly reference the resource.
+Should you choose to provide your data to the entities listed below, be warned: Your uploaded data resides on a server, unprotected from any user that can directly reference the resource.
 
 <br>
 
