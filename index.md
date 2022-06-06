@@ -155,11 +155,27 @@ permalink: /
 </summary>
 
 <summary>
+<h3 id="contentHeader">Amadeus Travel Software</h3>
+</summary>
+ 
+<summary>
+<p id="contentPara">In 2019 the head of a security firm discovered that valid boarding passes of other travellers could be downloaded from travel software developed by the Amadeus IT Group, who provide software used by 500 airlines. This instance of IDOR was discovered when the researcher noticed the URL structure of his own boarding pass and realized the ID parameter was vulnerable. Through this vulnerability a threat actor could obtain customer PII such as phone numbers and contact information.</p>
+</summary>
+
+<summary>
 <h3 id="contentHeader">United States Department of Defense website</h3>
 </summary>
 
 <summary>
 <p id="contentPara">In 2020, a security firm discovered an IDOR vulnerability on the United States Department of Defence website. This instance of IDOR allowed for an unauthenticated account takeover, as the user ID and username parameters could be modified in a request to change the account password of any user.</p>
+</summary>
+
+<summary>
+<h3 id="contentHeader">The IRCTC’s Ticketing Portal</h3>
+</summary>
+
+<summary>
+<p id="contentPara">In 2021, a 17-year-old student discovered an IDOR vulnerability in the ticketing portal of the Indian Railway Catering and Tourism Corporation (IRCTC) when trying to book a ticket. This vulnerability allowed him to access passenger data such as names, ages, and journey related data.</p>
 </summary>
 
 <br>
@@ -170,6 +186,7 @@ permalink: /
   <thead>
     <tr>
       <th>Vendor</th>
+      <th>Privacy Policy</th>
       <th>Disclosure Date</th>
       <th>Still Accessible After Deletion</th>
       <th>Still Accessible After Account Deletion</th>
@@ -184,6 +201,7 @@ permalink: /
 {% for c in company %}
     <tr>
       <td markdown="span"><a href="{{ c.company_url }}">{{ c.name }}</a></td>
+      <td markdown="span">{{ c.privacy_policy }}</td>
       <td markdown="span">{{ c.disclosure_date }}</td>
       <td markdown="span">{{ c.saad }}</td>
       <td markdown="span">{{ c.saaad }}</td>
