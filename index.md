@@ -143,6 +143,11 @@ permalink: /
 <p id="contentPara">Should you choose to provide your data to the entities listed below, be warned: Your uploaded data resides on a server, unprotected from unauthorized access by anyone that can directly reference the resource.</p>
 
 <summary>
+<h2 id="contentHeader">Additional Privacy Implications</h2>
+</summary>
+<p id="contentPara">One of the main concerns with IDOR vulnerabilities, besides unauthorized access, is that even after a customer deletes their file it is typically just hidden and never actually deleted. The average customer would be oblivious to this fact and assume their data is gone when it is not. As a result, these vendors may be violating their own terms of service or privacy policy.</p>
+
+<summary>
 <h2 id="contentHeader">Historical breaches involving insecure direct object references</h2>
 </summary>
 <p id="contentPara">IDORs are historically problematic, as they can lead to data leaks and even account takeovers. Due to the prevalence of IDORs within web applications, it has led to some major data breaches over the past few years.</p>
