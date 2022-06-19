@@ -186,7 +186,7 @@ header h1 {
 header::before {
   content: "";
   position: absolute;
-  background: red;
+  background: var(--fg);
   left: 0;
   right: 0;
   top: 0;
@@ -265,7 +265,7 @@ section h2 {
   top: 8px;
   left: -32px;
   background: var(--bg);
-  border: solid 2px red;
+  border: solid 2px var(--fg);
   border-radius: 7px;
   width: 7px;
   height: 7px;
