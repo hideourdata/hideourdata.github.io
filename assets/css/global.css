@@ -216,11 +216,20 @@ header::after {
 }
 
 @media (max-width: 640px) {
-  header::after,
   header::before {
-    width: 100%;
+    background: var(--fg);
+    height: auto;
+    transform: skew(0deg, -5deg) scale(100%);
+    left: calc(var(--body-margin-left) * -1);
+    top: calc(var(--page-top) * -1 - 40px);
+    right: calc(var(--body-margin-left) * -1);
+    bottom: calc(var(--page-top) * -1 - 20px);
     margin-left: 0;
     margin-right: 0;
+  }
+
+  header::after {
+    display: none;
   }
 }
 
