@@ -107,6 +107,8 @@
 }
 
 html {
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
@@ -211,6 +213,14 @@ header::after {
   margin-right: calc(-100vw / 2 + 500px / 2);
   z-index: 0;
   /* display: none; */
+}
+
+@media (max-width: 640px) {
+  header::after,
+  header::before {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /* -----------------------------------------------
