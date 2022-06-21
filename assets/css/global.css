@@ -218,6 +218,7 @@ header::after {
 @media (max-width: 640px) {
   header::after,
   header::before {
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
