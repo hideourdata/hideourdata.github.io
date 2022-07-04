@@ -1,6 +1,10 @@
 ---
 layout: posts
 permalink: /
+title: "The IDOR Wall of Shame"
+description: "A list of organizations that treat insecure direct object references as intended functionality, not as a security vulnerability."
+twitter_social_image: "https://hideourdata.github.io/assets/images/idor_1200x630.png"
+og_social_image: "https://hideourdata.github.io/assets/images/idor_1200x628.png"
 ---
 
 <header>
